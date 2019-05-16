@@ -12,6 +12,9 @@
   <!-- Font Import Headings, CTA's, Header Navigation -->
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
+  <!-- Font Import Body -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 </head>
 
@@ -30,35 +33,74 @@
 
         <section class="intro">
           <!-- Image Goes Here (illustration-intro.png) -->
-          <h3>All your files in one secure location, accessible anywhere.</h3>
+          <img src="./images/illustration-intro.png" alt="Intro Illustration">
+          <h3 class = "intro__header">All your files in one secure location,<br /> accessible anywhere.</h3>
 
-          <p>
+          <p class = "intro__paragraph">
             Fylo stores all your most important files in one secure location. Access them wherever
             you need, share and collaborate with friends family, and co-workers.
           </p>
 
-          <a href="/">Get Started</a>
+          <a class = "intro__cta" href="/">Get Started</a>
       </section>
 
-      Access your files, anywhere
+      <section class="features">
+        <div class="box-container">
 
-      The ability to use a smartphone, tablet, or computer to access your account means your
-      files follow you everywhere.
+          <div class="box">
+            <img src="./images/icon-access-anywhere.svg" alt="Image Feature">
+            <h3 class = "box__header">Access your files, anywhere</h3>
+            <p class = "box__paragraph">
+              The ability to use a smartphone, tablet, or computer to access your account means your
+              files follow you everywhere.
+            </p>
+          </div>
 
-      Security you can trust
+          <div class="box">
+            <img src="./images/icon-security.svg" alt="Image Feature">
+            <h3 class = "box__header">Security you can trust</h3>
+            <p class = "box__paragraph">
+              2-factor authentication and user-controlled encryption are just a couple of the security
+              features we allow to help secure your files.
+            </p>
+          </div>
 
-      2-factor authentication and user-controlled encryption are just a couple of the security
-      features we allow to help secure your files.
+          <div class="box">
+            <img src="./images/icon-collaboration.svg" alt="Image Feature">
+            <h3 class = "box__header">Real-time collaboration</h3>
+            <p class = "box__paragraph">
+              Securely share files and folders with friends, family and colleagues for live collaboration.
+              No email attachments required.
+            </p>
+          </div>
 
-      Real-time collaboration
+          <div class="box">
+            <img src="./images/icon-any-file.svg" alt="Image Feature">
+            <h3 class = "box__header">Store any type of file</h3>
+            <p class = "box__paragraph">
+              Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
+              file types to be securely stored and shared.
+            </p>
+          </div>
 
-      Securely share files and folders with friends, family and colleagues for live collaboration.
-      No email attachments required.
+        </div>
+      </section>
 
-      Store any type of file
 
-      Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all
-      file types to be securely stored and shared.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       Stay productive, wherever you are
 
