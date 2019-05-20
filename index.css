@@ -1,13 +1,15 @@
+:root {
+  --white: white;
+  --mirage: #191E29;
+}
+
 body {
-  background-color: #1C2130;
-  background-image: url("./images/bg-curvy-desktop.svg");
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  background-position: center;
+  background-color: #1D232F;
+  margin: 0;
 }
 
 .container {
-  margin: 5% 5%;
+  /* margin: 5% 5%; */
 }
 
 .navigation {
@@ -15,6 +17,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin: 5% 5% 0%;
+  background-color: hsl(217, 28%, 15%);
 }
 
 .list {
@@ -28,7 +32,7 @@ body {
 
 .list__link {
   font-family: 'Raleway', sans-serif;
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -38,26 +42,30 @@ body {
   padding-top: 77px;
   justify-content: center;
   align-items: center;
+  background-color: hsl(217, 28%, 15%);
+  background-image: url(./images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .intro__header {
   font-size: 2.6rem;
   font-weight: 700;
-  color: white;
+  color: var(--white);
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
 
 .intro__paragraph {
   font-family: 'Raleway', sans-serif;
-  color: white;
+  color: var(--white);
   font-size: 1.3rem;
   width: 40%;
   text-align: center;
 }
 
 .intro__cta {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   background-color: cyan;
   padding: 20px 100px;
@@ -65,11 +73,18 @@ body {
   margin-top: 20px;
 }
 
+.features {
+  background-color: hsl(218, 28%, 13%);
+}
+
 .box-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  height: 100vh;
+  margin: 0 10%;
 }
 
 .box {
@@ -78,4 +93,22 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.box__img {
+  height: 83px;
+}
+
+.box__header {
+  font-family: 'Raleway', sans-serif;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.box__paragraph {
+  font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: var(--white);
+    width: 80%;
+    font-size: 0.95rem;
 }
